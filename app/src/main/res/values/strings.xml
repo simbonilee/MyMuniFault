@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyMuniFaults</string>
+    <string name="My_Account">My Account</string>
+    <string name="My_Profile">My Profile</string>
+    <string name="Change_password">Change Password</string>
+    <string name="Log_out">Log Out</string>
+    <string name="Other">Other</string>
+    <string name="share">Share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="police_number"><u>10111</u></string>
+    <string name="Fire_number"><u>0114580911</u></string>
+    <string name="ambulance_number"><u>10177</u></string>
+    <string name="child_number"><u>116</u></string>
+    <string name="crime_number"><u>0860010111</u></string>
+    <string name="Gbv_number"><u>0800428428</u></string>
+    <string name="title_activity_userlocation">userlocation</string>
+    <string name="MyMuniFaults" />
+</resources>

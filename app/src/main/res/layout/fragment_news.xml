@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NewsFragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/newsone"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/image_one"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_newspaper_24"></ImageView>
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="85dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:id="@+id/article_headingone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="35dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:text="If we fixed municipalities, half of the country’s problems would be solved"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/article_bodyone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/article_headingone"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="35dp"
+                        android:autoSizeMaxTextSize="1dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="vertical"
+                        android:text="Municipalities are at the core of promoting economic growth. One of the most distinct areas of local government’s competence with a direct and profound impact and influence over economic growth is the effective and efficient provision of core services. These services – reliable water and energy supply, road maintenance, refuse removal, maintenance of street lights to the satisfaction of its customers and cutting of grass at the verges of the road – are what we consider necessary services offered by a functional municipality."
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/newstwo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/newsone"
+            app:cardElevation="8dp"
+            android:layout_margin="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+            <ImageView
+                android:id="@+id/image_two"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_newspaper_24"></ImageView>
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="85dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:id="@+id/article_headingtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="35dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Is suing to secure a reliable electricity supply legally viable or effective? It’s a complicated human rights issue"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/article_bodytwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/article_headingtwo"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="35dp"
+                        android:autoSizeMaxTextSize="1dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="vertical"
+                        android:text="What options are available to wannabe litigants eager to assert what they regard as their right to a reliable supply of electricity? The Bill of Rights in South Africa contains many guaranteed rights, which cannot easily be delivered without a reliable supply of electricity. The state is obliged to respect, protect, promote and fulfil all the rights in the Bill of Rights."
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/newsthree"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            app:cardElevation="8dp"
+            android:layout_below="@+id/newstwo"
+            android:layout_margin="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+            <ImageView
+                android:id="@+id/image_three"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_newspaper_24"></ImageView>
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="85dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:id="@+id/article_headingthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="35dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:text="What will it take to fix our municipalities?"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/article_bodythree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/article_headingthree"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="35dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="vertical"
+                        android:text="We are in the middle of what some call the ‘silly season’, while the poor are plunging deeper into the abyss of poverty due to the high unemployment rate and severe joblessness aggravated by the Covid-19 pandemic, politicians are out in full force waxing lyrical about what they plan to do in addressing this calamity as they campaign for the upcoming local government elections. "
+                        android:autoSizeMaxTextSize="1dp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/newsfour"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            app:cardElevation="8dp"
+            android:layout_below="@+id/newsthree"
+            android:layout_margin="8dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp">
+            <ImageView
+                android:id="@+id/image_four"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_newspaper_24"></ImageView>
+
+            <LinearLayout
+                android:layout_width="285dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="85dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp">
+
+                    <TextView
+                        android:id="@+id/article_headingfour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="35dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Reporting municipal issues and faults."
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/article_bodyfour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/article_headingfour"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="35dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="vertical"
+                        android:text="By reporting faults, complaints, vandalism and theft of City property, residents can play their part in realising the well-run city we are striving for. Likewise, by providing various reporting channels to residents, the City can ensure  that services are delivered promptly and efficiently, in line with its commitment to being a responsive City."
+                        android:autoSizeMaxTextSize="1dp"
+                        android:textStyle="normal" />
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

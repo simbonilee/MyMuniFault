@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ProfileFragment">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:gravity="center"
+     android:orientation="vertical"
+     android:background="@color/coolergrey">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+          <TextView
+              android:id="@+id/profile_f"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="30dp"
+              android:layout_marginLeft="102dp"
+              android:text="Personal Profile"
+              android:textStyle="normal"
+              android:textSize="24dp"
+              android:textColor="@color/grey"
+              />
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:id="@+id/profile_Name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35dp"
+             android:layout_marginTop="90dp"
+             android:layout_marginRight="35dp"
+             app:boxBackgroundMode= "outline"
+             app:boxStrokeErrorColor="@color/red"
+             app:boxStrokeColor="@color/blue"
+             app:boxStrokeWidth="2dp"
+             app:endIconMode="clear_text"
+             app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+             app:startIconTint="@color/blue">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/profile_NameEditT"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:inputType="text"
+                 android:hint="Name"
+                 android:maxLines="1"
+                 android:focusable="false"
+                 android:longClickable="false"
+                 android:textSize="14dp"
+                 android:singleLine="true">
+
+             </com.google.android.material.textfield.TextInputEditText>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:id="@+id/profile_Surname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35dp"
+             android:layout_marginRight="35dp"
+             android:layout_below="@+id/profile_Name"
+             app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+             app:startIconTint="@color/blue"
+             app:boxStrokeColor="@color/blue"
+             app:boxStrokeErrorColor="@color/red"
+             app:boxStrokeWidth="2dp"
+             app:endIconMode="clear_text"
+             app:hintTextColor="@color/grey"
+             android:hint="Surname"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/Prof_SurnameEditT"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:inputType="text"
+                 android:focusable="false"
+                 android:longClickable="false"
+                 android:textColorHint="@color/blue"
+                 android:maxLines="1"
+                 android:textSize="14dp"
+                 android:singleLine="true"
+                 >
+
+             </com.google.android.material.textfield.TextInputEditText>
+         </com.google.android.material.textfield.TextInputLayout>
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:id="@+id/profile_Email"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/profile_Surname"
+             android:layout_marginLeft="35dp"
+             android:layout_marginRight="35dp"
+             app:boxBackgroundMode= "outline"
+             app:endIconMode="clear_text"
+             app:boxStrokeErrorColor="@color/red"
+             app:boxStrokeColor="@color/blue"
+             app:boxStrokeWidth="2dp"
+             app:startIconDrawable="@drawable/ic_baseline_email_22"
+             app:startIconTint="@color/blue">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/profile_EmailEditT"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:inputType="textEmailAddress"
+                 android:hint="Email"
+                 android:maxLines="1"
+                 android:textSize="14dp"
+                 android:singleLine="true">
+
+             </com.google.android.material.textfield.TextInputEditText>
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:id="@+id/profile_Number"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35dp"
+             android:layout_marginRight="35dp"
+             android:layout_below="@id/profile_Email"
+             app:startIconDrawable="@drawable/ic_baseline_phone_24"
+             app:endIconMode="clear_text"
+             app:startIconTint="@color/blue"
+             app:boxStrokeColor="@color/blue"
+             app:boxStrokeErrorColor="@color/red"
+             app:boxStrokeWidth="2dp"
+             app:counterEnabled="true"
+             app:counterMaxLength="10"
+             app:counterTextColor="@color/grey"
+             app:passwordToggleTint="@color/blue"
+             app:hintTextColor="@color/grey"
+             android:hint="Number"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/profile_NumberEditT"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:inputType="number"
+                 android:textColorHint="@color/blue"
+                 android:maxLines="1"
+                 android:textSize="14dp"
+                 android:singleLine="true"
+                 >
+
+             </com.google.android.material.textfield.TextInputEditText>
+         </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/Updatebutton"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_below="@+id/profile_Number"
+             android:layout_alignParentStart="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginStart="35dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginEnd="35dp"
+             android:background="@drawable/btn_background"
+             android:text="Update"
+             android:textColor="@color/white"
+             android:textSize="20dp"/>
+
+              </RelativeLayout>
+
+
+
+ </LinearLayout>
+
+
+
+</FrameLayout>

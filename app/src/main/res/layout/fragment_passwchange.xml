@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.PasswchangeFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/coolergrey">
+
+        <TextView
+            android:id="@+id/txtnewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter new Password"
+            android:textColor="@color/grey"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/NewpasswordOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtnewPassword"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="35dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:startIconTint="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeErrorColor="@color/red"
+            app:boxStrokeWidth="2dp"
+            app:helperTextEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:counterTextColor="@color/grey"
+            app:passwordToggleTint="@color/blue"
+            app:hintTextColor="@color/grey"
+            android:hint="Password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passOneEditT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColorHint="@color/blue"
+                android:maxLines="1"
+                android:textSize="14dp"
+                android:singleLine="true"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/ReEnterpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NewpasswordOne"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:startIconTint="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeErrorColor="@color/red"
+            app:boxStrokeWidth="2dp"
+            app:helperTextEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:counterTextColor="@color/grey"
+            app:passwordToggleTint="@color/blue"
+            app:hintTextColor="@color/grey"
+            android:hint="Retype password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passTwoEditT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColorHint="@color/blue"
+                android:maxLines="1"
+                android:textSize="14dp"
+                android:singleLine="true"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/BtnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ReEnterpassword"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_background"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

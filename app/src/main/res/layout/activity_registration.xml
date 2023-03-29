@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@color/coolergrey">
+
+    <TextView
+        android:id="@+id/regtext"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="84dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="-12dp"
+        android:drawableTop="@drawable/ic_baseline_account_circle_32"
+        android:paddingStart="15dp"
+        android:paddingEnd="30dp"
+        />//android:text="      Register"
+        android:textColor="@color/blue"
+        android:textSize="23dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="35dp"
+        app:boxBackgroundMode= "outline"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NameEditT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:singleLine="true">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/Surname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@+id/Name"
+        app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+        app:startIconTint="@color/blue"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/grey"
+        android:hint="Surname"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SurnameEditT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColorHint="@color/blue"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:singleLine="true"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/Surname"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:boxBackgroundMode= "outline"
+        app:endIconMode="clear_text"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeWidth="2dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_22"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regEmailEditT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:maxLength="64"
+            android:hint="Email"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:singleLine="true">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@id/regEmail"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+        app:endIconMode="clear_text"
+        app:startIconTint="@color/blue"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeWidth="2dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:counterTextColor="@color/grey"
+        app:passwordToggleTint="@color/blue"
+        app:hintTextColor="@color/grey"
+        android:hint="Number"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NumberEditT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColorHint="@color/blue"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:textSize="14dp"
+            android:singleLine="true"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/Municipality"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@id/Number"
+        android:layout_marginRight="35dp"
+        app:boxBackgroundMode= "outline"
+        app:endIconMode="dropdown_menu"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeWidth="2dp"
+        app:startIconDrawable="@drawable/municon"
+        app:startIconTint="@color/blue">
+
+       <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/MunicipalEditT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="municipality"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:singleLine="true">
+
+       </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/regpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_below="@id/Municipality"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/blue"
+        app:boxStrokeColor="@color/blue"
+        app:passwordToggleEnabled="true"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxStrokeWidth="2dp"
+        app:helperTextEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:counterTextColor="@color/grey"
+        app:passwordToggleTint="@color/blue"
+        app:hintTextColor="@color/grey"
+        android:hint="Password"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RegPasswordEditT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColorHint="@color/blue"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:singleLine="true"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/RegContinue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/regpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/btn_background"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

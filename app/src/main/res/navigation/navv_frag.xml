@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navv_frag"
+    app:startDestination="@id/Home">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.sele.mymunifaults.view.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/Password_Change"
+        android:name="com.sele.mymunifaults.view.PasswchangeFragment"
+        android:label="Change password"
+        tools:layout="@layout/fragment_passwchange"
+
+            />
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.sele.mymunifaults.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"
+
+        >
+        <action
+            android:id="@+id/action_Home_to_electricitypage2"
+            app:destination="@id/electricitypage2"
+            app:popEnterAnim="@anim/nav_default_enter_anim"/>
+        <action
+            android:id="@+id/action_Home_to_emergencypage2"
+            app:destination="@id/emergencypage2" />
+        <action
+            android:id="@+id/action_Home_to_housingPage"
+            app:destination="@id/housingPage" />
+        <action
+            android:id="@+id/action_Home_to_roadspage"
+            app:destination="@id/roadspage" />
+        <action
+            android:id="@+id/action_Home_to_trafificPage"
+            app:destination="@id/trafificPage" />
+        <action
+            android:id="@+id/action_Home_to_wastePage"
+            app:destination="@id/wastePage" />
+        <action
+            android:id="@+id/action_Home_to_otherServicesPage"
+            app:destination="@id/otherServicesPage" />
+
+        <action
+            android:id="@+id/action_Home_to_waterpage"
+            app:destination="@id/waterpage" />
+    </fragment>
+    <fragment
+        android:id="@+id/electricitypage2"
+        android:name="com.sele.mymunifaults.view.electricitypage"
+        android:label="Electricity"
+        tools:layout="@layout/fragment_electricitypage" />
+    <fragment
+        android:id="@+id/emergencypage2"
+        android:name="com.sele.mymunifaults.view.emergencypage"
+        android:label="Emergency"
+        tools:layout="@layout/fragment_emergencypage" />
+    <fragment
+        android:id="@+id/housingPage"
+        android:name="com.sele.mymunifaults.view.housingPage"
+        android:label="Housing"
+        tools:layout="@layout/fragment_housing_page" />
+    <fragment
+        android:id="@+id/roadspage"
+        android:name="com.sele.mymunifaults.view.roadspage"
+        android:label="Roads"
+        tools:layout="@layout/fragment_roadspage" />
+    <fragment
+        android:id="@+id/otherServicesPage"
+        android:name="com.sele.mymunifaults.view.otherServicesPage"
+        android:label="Other"
+        tools:layout="@layout/fragment_other_services_page" />
+    <fragment
+        android:id="@+id/wastePage"
+        android:name="com.sele.mymunifaults.view.wastePage"
+        android:label="Waste"
+        tools:layout="@layout/fragment_waste_page" />
+    <fragment
+        android:id="@+id/trafificPage"
+        android:name="com.sele.mymunifaults.view.trafificPage"
+        android:label="Traffic"
+        tools:layout="@layout/fragment_trafific_page" />
+    <fragment
+        android:id="@+id/waterpage"
+        android:name="com.sele.mymunifaults.view.waterpage"
+        android:label="Water"
+        tools:layout="@layout/fragment_waterpage" />
+    <fragment
+        android:id="@+id/NewsFragment"
+        android:name="com.sele.mymunifaults.view.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" />
+
+
+</navigation>
