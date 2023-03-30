@@ -1,4 +1,4 @@
-![Screenshot_20230329-173052](https://user-images.githubusercontent.com/116881521/228701777-d356373b-24d0-49d5-98ca-4d46c45f7525.jpg)
+
 # MyMuniFault
 Municipality fault reporting app.
 
@@ -7,5 +7,11 @@ I created this app with the intention of providing a solution for people who liv
 this app allows a user to pick a fault from a category list of most likely faults or common faults and it also allows the user to add their location either manually or by allowing the app to access and retrieve their pricise gps location, the app also allows the user to add a describtion of the fault and attach an image that will serve as proof of the fault. 
 
 the app also allows users to read service delivery articles and use emergency contacts that are within the app incase of an emergency.
+
+![Screenshot_20230329-173052](https://user-images.githubusercontent.com/116881521/228702140-4ae027ef-61bb-45f0-b39e-504840b06daa.jpg)
+![reg](https://user-images.githubusercontent.com/116881521/228702191-db2b5067-4900-4844-a27f-f571601268f2.jpg)
+
+
+
 
 
