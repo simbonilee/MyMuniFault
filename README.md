@@ -1,3 +1,6 @@
 # MyMuniFault
 Municipality fault reporting app.
-![Screenshot_2022-09-23-12-18-59-91](https://user-images.githubusercontent.com/116881521/228692185-9c2baabe-7eb9-4a79-acdc-8dc26ad5586a.jpg)
+
+I created this app with the intention of providing a solution to people who live far from their municipality offices to report municipality service faults from the comfort of their homes, instead of travelling long distances or relying on calls that ussually don't go through due to network problems or congestion.
+
+
