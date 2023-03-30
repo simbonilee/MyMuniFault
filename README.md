@@ -14,6 +14,7 @@ the app also allows users to read service delivery articles and use emergency co
 ![reg](https://user-images.githubusercontent.com/116881521/228702191-db2b5067-4900-4844-a27f-f571601268f2.jpg)
 ![Screenshot_20230329-173052](https://user-images.githubusercontent.com/116881521/228702140-4ae027ef-61bb-45f0-b39e-504840b06daa.jpg)
 ![Screenshot_20230329-174237](https://user-images.githubusercontent.com/116881521/228703664-2557134b-9715-4fb8-b485-884c2a877eee.jpg)
+![Screenshot_20230329-174237 (1)](https://user-images.githubusercontent.com/116881521/228704706-3e19b156-e972-4d4f-af96-7a350eb47c7a.jpg)
 
 ![Screenshot_20230329-183044](https://user-images.githubusercontent.com/116881521/228703180-41805e2e-24eb-484f-91cc-ebc44b26bb2e.jpg)
 ![Screenshot_20230329-174550](https://user-images.githubusercontent.com/116881521/228703589-e2c92ae2-7402-4d2b-8c45-f54ca190c260.jpg)
